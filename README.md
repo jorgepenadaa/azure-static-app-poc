@@ -1,6 +1,8 @@
 # Azure Static Web Apps POC
 
-Minimal static HTML site for proving Azure Static Web Apps deployment from GitHub (`jorgedaa`).
+Minimal static HTML site. Hosted on **GitHub Pages** (Azure Static Web Apps left as an optional later path).
+
+**Live:** https://jorgepenadaa.github.io/azure-static-app-poc/
 
 ## Local preview
 
@@ -10,11 +12,8 @@ Open `index.html` in a browser, or serve the folder:
 npx --yes serve .
 ```
 
-## Deploy to Azure Static Web Apps
+## Deploy
 
-1. Push this repo to `github.com/jorgedaa/<repo-name>`.
-2. In Azure Portal → **Create a resource** → **Static Web App**.
-3. Connect the GitHub repo; set **App location** to `/` (repo root). Leave API and output blank (no build).
-4. Azure adds a GitHub Actions workflow and deploys on every push to the tracked branch.
+Push to `master`. GitHub Pages serves the repo root automatically.
 
-Config lives in `staticwebapp.config.json` (fallback routing + basic headers).
+(`staticwebapp.config.json` is unused on Pages; keep it if you later wire up Azure Static Web Apps.)
