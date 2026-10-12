@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Apps POC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header class="hero">
+      <p class="brand">Static Apps POC</p>
+      <h1>Ship HTML from git to Azure in minutes.</h1>
+      <p class="lede">
+        A minimal static site to prove Azure Static Web Apps hosting,
+        custom domains, and CI from GitHub.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#status">Check live status</a>
+        <a class="btn ghost" href="https://learn.microsoft.com/azure/static-web-apps/" target="_blank" rel="noreferrer">
+          Azure docs
+        </a>
+      </div>
+    </header>
+
+    <main id="status" class="status">
+      <h2>Deployment pulse</h2>
+      <p class="lede narrow">
+        If you can read this page from an <code>*.azurestaticapps.net</code>
+        URL, the pipeline worked.
+      </p>
+      <dl class="facts">
+        <div>
+          <dt>Host</dt>
+          <dd id="host">local</dd>
+        </div>
+        <div>
+          <dt>Loaded</dt>
+          <dd id="loaded-at">—</dd>
+        </div>
+        <div>
+          <dt>Build</dt>
+          <dd>static HTML · no framework</dd>
+        </div>
+      </dl>
+    </main>
+
+    <footer class="foot">
+      <p>jorgedaa · Azure Static Web Apps proof of concept</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
