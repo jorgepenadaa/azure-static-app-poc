@@ -17,15 +17,20 @@
 
     <header class="hero">
       <p class="brand">Static Apps POC</p>
-      <h1>Ship HTML from git to Azure in minutes.</h1>
+      <h1>Ship HTML from git to the web in minutes.</h1>
       <p class="lede">
-        A minimal static site to prove Azure Static Web Apps hosting,
-        custom domains, and CI from GitHub.
+        A minimal static site hosted on GitHub Pages — push to
+        <code>master</code> and it goes live.
       </p>
       <div class="actions">
         <a class="btn primary" href="#status">Check live status</a>
-        <a class="btn ghost" href="https://learn.microsoft.com/azure/static-web-apps/" target="_blank" rel="noreferrer">
-          Azure docs
+        <a
+          class="btn ghost"
+          href="https://docs.github.com/pages"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Pages docs
         </a>
       </div>
     </header>
@@ -33,8 +38,8 @@
     <main id="status" class="status">
       <h2>Deployment pulse</h2>
       <p class="lede narrow">
-        If you can read this page from an <code>*.azurestaticapps.net</code>
-        URL, the pipeline worked.
+        If you can read this page from a
+        <code>*.github.io</code> URL, the publish worked.
       </p>
       <dl class="facts">
         <div>
@@ -53,7 +58,7 @@
     </main>
 
     <footer class="foot">
-      <p>jorgedaa · Azure Static Web Apps proof of concept</p>
+      <p>jorgepenadaa · static site proof of concept</p>
     </footer>
 
     <script src="app.js"></script>
